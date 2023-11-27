@@ -1,0 +1,26 @@
+@font-face{
+  font-family: SternbachItalic;
+  src: url("../assets/font/SternbachItalic.otf")format("opentype");
+}
+
+.nav-bar{
+  background-color: #d20a0a;
+}
+
+.titulo_nav{
+
+  font-family: SternbachItalic;
+  font-size: 50px;
+
+
+}
+
+.botao_nav {
+  text-align: right;
+  margin-left: 50px;
+  color: aliceblue;
+}
+
+a{
+  text-decoration: none;
+}

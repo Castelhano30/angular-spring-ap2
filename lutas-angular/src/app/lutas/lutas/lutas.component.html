@@ -1,0 +1,17 @@
+
+<div class="containerlutadores">
+
+  <div class="card" *ngFor="let item of lutadores">
+    <div class="card__corner"></div>
+    <div class="card__img">
+      <img [src]="item.urlImage" alt="">
+    </div>
+    <div class="card-int">
+      <p class="card-int__title">This is the article title</p>
+      <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipiscing elit, donec suspendisse vulputate dictumst enim per mus imperdiet, platea non massa dictum tempus sapien.</p>
+      <button class="card-int__button">Show</button>
+    </div>
+  </div>
+
+</div>
+
