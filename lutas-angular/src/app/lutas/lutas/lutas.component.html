@@ -1,16 +1,15 @@
 
-<div class="containerlutadores">
+<div class="containerlutadores" *ngFor="let item of lutadores">
 
-  <div class="card" *ngFor="let item of lutadores">
-    <div class="card__corner"></div>
-    <div class="card__img">
-      <img [src]="item.urlImage" alt="">
-    </div>
-    <div class="card-int">
-      <p class="card-int__title">This is the article title</p>
-      <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipiscing elit, donec suspendisse vulputate dictumst enim per mus imperdiet, platea non massa dictum tempus sapien.</p>
-      <button class="card-int__button">Show</button>
-    </div>
+  <div class="card" >
+    <div class="card-image"><img class="imagemm"[src]="item.urlImage" alt=""></div>
+    <p class="card-title">{{ item.nome }}</p>
+    <p class="card-body">
+      Nullam ac tristique nulla, at convallis quam. Integer consectetur mi nec magna tristique, non lobortis.
+    </p>
+    <p class="footer">cpf : {{ item.cpf }}</p>
+
+    <button> teste</button>
   </div>
 
 </div>
