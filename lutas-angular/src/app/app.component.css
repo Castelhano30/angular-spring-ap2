@@ -5,7 +5,7 @@
 
 .nav-bar{
   background-color: #d20a0a;
-
+  position: fixed;
 }
 
 .titulo_nav{

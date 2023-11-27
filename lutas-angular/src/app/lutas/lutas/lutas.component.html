@@ -1,16 +1,21 @@
 
-<div class="containerlutadores" *ngFor="let item of lutadores">
 
-  <div class="card" >
-    <div class="card-image"><img class="imagemm"[src]="item.urlImage" alt=""></div>
-    <p class="card-title">{{ item.nome }}</p>
-    <p class="card-body">
-      Nullam ac tristique nulla, at convallis quam. Integer consectetur mi nec magna tristique, non lobortis.
-    </p>
-    <p class="footer">cpf : {{ item.cpf }}</p>
 
-    <button> teste</button>
+  <div class="containerlutadores" >
+
+    <div class="card" *ngFor="let item of lutadores">
+      <div class="card-image"><img class="imagemm"[src]="item.urlImage" alt=""></div>
+      <p class="card-title">{{ item.nome }}</p>
+      <p class="card-body">
+        Nullam ac tristique nulla, at convallis quam. Integer consectetur mi nec magna tristique, non lobortis.
+      </p>
+      <p class="footer">cpf : {{ item.cpf }}</p>
+
+      <button routerLink="lutas/{{item.id}}" class="texto-bt" (click)="redirectToPerfilutas(item.id)">Ver detalhes</button>
+    </div>
+
   </div>
 
-</div>
+
+
 

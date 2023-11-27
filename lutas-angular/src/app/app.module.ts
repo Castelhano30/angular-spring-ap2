@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LutasModule } from './lutas/lutas.module';
 import { HttpClientModule } from '@angular/common/http';
+import { PerfilLutasComponent } from './perfil-lutas/perfil-lutas.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PerfilLutasComponent
   ],
   imports: [
     BrowserModule,
