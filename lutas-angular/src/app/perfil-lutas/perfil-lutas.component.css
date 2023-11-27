@@ -1,3 +1,30 @@
 p{
   color: aliceblue;
 }
+
+.texto-card {
+
+  margin-bottom: 5px;
+}
+
+.card {
+  padding: 20px;
+  width: 150px;
+  border-radius: 20px;
+  background: #212121;
+  box-shadow: 5px 5px 8px #1b1b1b,
+             -5px -5px 8px #272727;
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 100px;
+
+}
+
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(2,230px);
+  grid-auto-rows:auto ;
+  justify-content: center;
+  padding: 20px;
+
+}
