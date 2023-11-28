@@ -12,8 +12,8 @@ export class LutasOfService {
   constructor(private httpCliente: HttpClient) { }
 
   public getMusicas(idLutador : any): Observable<lutas_of[]> {
-    return this.httpCliente.get<lutas_of[]>('localhost:8080/lutador/${idLutador}/lutas/')
+    return this.httpCliente.get<lutas_of[]>('ap1-cloud.azurewebsites.net/lutador/${idLutador}/lutas/')
   }
 
-  
+
 }
