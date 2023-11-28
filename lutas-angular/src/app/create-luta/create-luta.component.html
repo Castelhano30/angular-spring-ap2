@@ -1,0 +1,17 @@
+
+<form class="form">
+  <p class="form-title">Criar novo lutador</p>
+   <div class="input-container">
+     <input type="text" placeholder="Nome" [(ngModel)]="lutador.nome">
+     <span>
+     </span>
+ </div>
+ <div class="input-container">
+     <input type="text" placeholder="cpf" [(ngModel)]="lutador.cpf">
+   </div>
+    <button type="submit" class="submit" (ngSubmit)="criarNovoLutador()">
+   Criar!
+ </button>
+
+</form>
+

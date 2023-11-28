@@ -1,3 +1,4 @@
+import { Dialog } from '@angular/cdk/dialog';
 import { LutasService } from './../services/lutas.service';
 import { Component, OnInit } from '@angular/core';
 import { Lutas } from '../model/lutas';

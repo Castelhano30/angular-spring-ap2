@@ -14,4 +14,6 @@ export class LutasOfService {
   public getMusicas(idLutador : any): Observable<lutas_of[]> {
     return this.httpCliente.get<lutas_of[]>('localhost:8080/lutador/${idLutador}/lutas/')
   }
+
+  
 }

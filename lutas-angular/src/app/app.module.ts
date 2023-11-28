@@ -9,13 +9,15 @@ import { HomeComponent } from './home/home.component';
 import { LutasModule } from './lutas/lutas.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PerfilLutasComponent } from './perfil-lutas/perfil-lutas.component';
-
+import { CreateLutaComponent } from './create-luta/create-luta.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PerfilLutasComponent
+    PerfilLutasComponent,
+    CreateLutaComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import { PerfilLutasComponent } from './perfil-lutas/perfil-lutas.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     LutasModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

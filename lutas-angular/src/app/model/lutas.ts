@@ -2,10 +2,10 @@ import { lutas_of } from "./lutas_of";
 
 export interface Lutas {
 
-  id: number;
+  id?: number;
   nome: string;
-  cpf: number;
-  lutas: lutas_of[];
-  urlImage: string;
+  cpf: string;
+  lutas?: lutas_of[];
+  urlImage?: string;
 
 }

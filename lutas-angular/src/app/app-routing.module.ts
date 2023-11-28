@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AllLutasComponent } from './lutas/lutas/lutas.component';
 import { PerfilLutasComponent } from './perfil-lutas/perfil-lutas.component';
+import { CreateLutaComponent } from './create-luta/create-luta.component';
+
 
 
 const routes: Routes = [
@@ -14,7 +16,9 @@ const routes: Routes = [
 
   {path: 'perfil-lutas', component: PerfilLutasComponent},
 
-  {path: 'perfil-lutas/:id', component: PerfilLutasComponent}
+  {path: 'perfil-lutas/:id', component: PerfilLutasComponent},
+
+  {path: 'create-luta', component: CreateLutaComponent}
 
 ];
 
